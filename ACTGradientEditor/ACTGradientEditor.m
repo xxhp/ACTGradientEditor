@@ -153,7 +153,12 @@ static BOOL pointsWithinDistance(NSPoint p1, NSPoint p2, CGFloat d) {
 }
 
 - (void)_addColorAtLocation: (CGFloat)colorLocation
-{    
+{
+    CGFloat editingColorLocation;
+    if (_editingKnobAtIndex > -1) {
+        [self.gradient getColor: nil location: &editingColorLocation atIndex: _editingKnobAtIndex];
+    }
+    
     NSMutableArray* newColors = [NSMutableArray arrayWithCapacity: [self.gradient numberOfColorStops] + 1];
     CGFloat locations[[self.gradient numberOfColorStops] + 1];
     
@@ -175,8 +180,14 @@ static BOOL pointsWithinDistance(NSPoint p1, NSPoint p2, CGFloat d) {
     locations[[self.gradient numberOfColorStops]] = colorLocation;
     if (colorIndex == -1) { colorIndex = (int)[self.gradient numberOfColorStops] + 1; }
     
-    if (colorIndex < _editingKnobAtIndex) { _editingKnobAtIndex++; [self setNeedsDisplay: YES]; }
-    if (colorIndex < _draggingKnobAtIndex) { _draggingKnobAtIndex++; [self setNeedsDisplay: YES]; }
+    if ((colorIndex < _editingKnobAtIndex) || (colorIndex == 0 && _editingKnobAtIndex == 0 && colorLocation < editingColorLocation)) {
+        _editingKnobAtIndex++;
+        [self setNeedsDisplay: YES];
+    }
+    if ((colorIndex < _draggingKnobAtIndex) || (colorIndex == 0 && _draggingKnobAtIndex == 0 && colorLocation < editingColorLocation)) {
+        _draggingKnobAtIndex++;
+        [self setNeedsDisplay: YES];
+    }
     
     self.gradient = [[NSGradient alloc] initWithColors: newColors atLocations: locations colorSpace: [NSColorSpace genericRGBColorSpace]];
 }
@@ -199,9 +210,6 @@ static BOOL pointsWithinDistance(NSPoint p1, NSPoint p2, CGFloat d) {
     int nColorsPassed = 0;
     for (i = 0; i < [self.gradient numberOfColorStops]; i++) {
         CGFloat location;
-        
-        NSLog(@"_dragging loop index: %d", i);
-        
         [self.gradient getColor: nil location: &location atIndex: i];
                 
         // Shouldn't compare the dragged color with itself
@@ -244,9 +252,7 @@ static BOOL pointsWithinDistance(NSPoint p1, NSPoint p2, CGFloat d) {
     for (i = 0; i < [self.gradient numberOfColorStops]; i++) {
         NSColor* color;
         CGFloat location;
-        
-        NSLog(@"setting loop index: %d", i);
-        
+                
         [self.gradient getColor: &color location: &location atIndex: i];
         
         [newColors addObject: color];
