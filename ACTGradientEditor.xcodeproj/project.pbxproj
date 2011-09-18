@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA9A523E142109E7008A110E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9A523D142109E7008A110E /* Cocoa.framework */; };
+		FA9A5248142109E7008A110E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA9A5246142109E7008A110E /* InfoPlist.strings */; };
+		FA9A524A142109E7008A110E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A5249142109E7008A110E /* main.m */; };
+		FA9A524E142109E7008A110E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA9A524C142109E7008A110E /* Credits.rtf */; };
+		FA9A5251142109E7008A110E /* ACTGradientEditorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A5250142109E7008A110E /* ACTGradientEditorAppDelegate.m */; };
+		FA9A5254142109E7008A110E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9A5252142109E7008A110E /* MainMenu.xib */; };
+		FA9A525D14210A91008A110E /* ACTGradientEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A525C14210A91008A110E /* ACTGradientEditor.m */; };
+		FA9A526014210AB3008A110E /* ACTGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9A525F14210AB3008A110E /* ACTGradientView.m */; };
+		FABBE53A1422AB2900EA43D6 /* NSColor+ChessboardColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBE5391422AB2900EA43D6 /* NSColor+ChessboardColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA9A5239142109E7008A110E /* ACTGradientEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACTGradientEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9A523D142109E7008A110E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA9A5240142109E7008A110E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FA9A5241142109E7008A110E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA9A5242142109E7008A110E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA9A5245142109E7008A110E /* ACTGradientEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ACTGradientEditor-Info.plist"; sourceTree = "<group>"; };
+		FA9A5247142109E7008A110E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA9A5249142109E7008A110E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA9A524B142109E7008A110E /* ACTGradientEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACTGradientEditor-Prefix.pch"; sourceTree = "<group>"; };
+		FA9A524D142109E7008A110E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FA9A524F142109E7008A110E /* ACTGradientEditorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACTGradientEditorAppDelegate.h; sourceTree = "<group>"; };
+		FA9A5250142109E7008A110E /* ACTGradientEditorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACTGradientEditorAppDelegate.m; sourceTree = "<group>"; };
+		FA9A5253142109E7008A110E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA9A525B14210A91008A110E /* ACTGradientEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ACTGradientEditor.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA9A525C14210A91008A110E /* ACTGradientEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ACTGradientEditor.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA9A525E14210AB3008A110E /* ACTGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTGradientView.h; sourceTree = "<group>"; };
+		FA9A525F14210AB3008A110E /* ACTGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTGradientView.m; sourceTree = "<group>"; };
+		FABBE5381422AB2900EA43D6 /* NSColor+ChessboardColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+ChessboardColor.h"; sourceTree = "<group>"; };
+		FABBE5391422AB2900EA43D6 /* NSColor+ChessboardColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+ChessboardColor.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA9A5236142109E7008A110E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9A523E142109E7008A110E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA9A522E142109E7008A110E = {
+			isa = PBXGroup;
+			children = (
+				FA9A5243142109E7008A110E /* ACTGradientEditor */,
+				FA9A523C142109E7008A110E /* Frameworks */,
+				FA9A523A142109E7008A110E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA9A523A142109E7008A110E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A5239142109E7008A110E /* ACTGradientEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA9A523C142109E7008A110E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A523D142109E7008A110E /* Cocoa.framework */,
+				FA9A523F142109E7008A110E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA9A523F142109E7008A110E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A5240142109E7008A110E /* AppKit.framework */,
+				FA9A5241142109E7008A110E /* CoreData.framework */,
+				FA9A5242142109E7008A110E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FA9A5243142109E7008A110E /* ACTGradientEditor */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A524F142109E7008A110E /* ACTGradientEditorAppDelegate.h */,
+				FA9A5250142109E7008A110E /* ACTGradientEditorAppDelegate.m */,
+				FA9A5252142109E7008A110E /* MainMenu.xib */,
+				FA9A525A142109F6008A110E /* SharedCode */,
+				FA9A5244142109E7008A110E /* Supporting Files */,
+			);
+			path = ACTGradientEditor;
+			sourceTree = "<group>";
+		};
+		FA9A5244142109E7008A110E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A5245142109E7008A110E /* ACTGradientEditor-Info.plist */,
+				FA9A5246142109E7008A110E /* InfoPlist.strings */,
+				FA9A5249142109E7008A110E /* main.m */,
+				FA9A524B142109E7008A110E /* ACTGradientEditor-Prefix.pch */,
+				FA9A524C142109E7008A110E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA9A525A142109F6008A110E /* SharedCode */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A526114210AB8008A110E /* ACTGradientView */,
+				FA9A526214210AC4008A110E /* ACTGradientEditor */,
+				FABBE53C1422AB3100EA43D6 /* NSColor+ChessboardColor */,
+			);
+			name = SharedCode;
+			sourceTree = "<group>";
+		};
+		FA9A526114210AB8008A110E /* ACTGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A525E14210AB3008A110E /* ACTGradientView.h */,
+				FA9A525F14210AB3008A110E /* ACTGradientView.m */,
+			);
+			name = ACTGradientView;
+			sourceTree = "<group>";
+		};
+		FA9A526214210AC4008A110E /* ACTGradientEditor */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A525B14210A91008A110E /* ACTGradientEditor.h */,
+				FA9A525C14210A91008A110E /* ACTGradientEditor.m */,
+			);
+			name = ACTGradientEditor;
+			sourceTree = "<group>";
+		};
+		FABBE53C1422AB3100EA43D6 /* NSColor+ChessboardColor */ = {
+			isa = PBXGroup;
+			children = (
+				FABBE5381422AB2900EA43D6 /* NSColor+ChessboardColor.h */,
+				FABBE5391422AB2900EA43D6 /* NSColor+ChessboardColor.m */,
+			);
+			name = "NSColor+ChessboardColor";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA9A5238142109E7008A110E /* ACTGradientEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9A5257142109E7008A110E /* Build configuration list for PBXNativeTarget "ACTGradientEditor" */;
+			buildPhases = (
+				FA9A5235142109E7008A110E /* Sources */,
+				FA9A5236142109E7008A110E /* Frameworks */,
+				FA9A5237142109E7008A110E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ACTGradientEditor;
+			productName = ACTGradientEditor;
+			productReference = FA9A5239142109E7008A110E /* ACTGradientEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA9A5230142109E7008A110E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FA9A5233142109E7008A110E /* Build configuration list for PBXProject "ACTGradientEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA9A522E142109E7008A110E;
+			productRefGroup = FA9A523A142109E7008A110E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA9A5238142109E7008A110E /* ACTGradientEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA9A5237142109E7008A110E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9A5248142109E7008A110E /* InfoPlist.strings in Resources */,
+				FA9A524E142109E7008A110E /* Credits.rtf in Resources */,
+				FA9A5254142109E7008A110E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA9A5235142109E7008A110E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9A524A142109E7008A110E /* main.m in Sources */,
+				FA9A5251142109E7008A110E /* ACTGradientEditorAppDelegate.m in Sources */,
+				FA9A525D14210A91008A110E /* ACTGradientEditor.m in Sources */,
+				FA9A526014210AB3008A110E /* ACTGradientView.m in Sources */,
+				FABBE53A1422AB2900EA43D6 /* NSColor+ChessboardColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA9A5246142109E7008A110E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9A5247142109E7008A110E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA9A524C142109E7008A110E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9A524D142109E7008A110E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FA9A5252142109E7008A110E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9A5253142109E7008A110E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA9A5255142109E7008A110E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA9A5256142109E7008A110E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA9A5258142109E7008A110E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ACTGradientEditor/ACTGradientEditor-Prefix.pch";
+				INFOPLIST_FILE = "ACTGradientEditor/ACTGradientEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA9A5259142109E7008A110E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ACTGradientEditor/ACTGradientEditor-Prefix.pch";
+				INFOPLIST_FILE = "ACTGradientEditor/ACTGradientEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA9A5233142109E7008A110E /* Build configuration list for PBXProject "ACTGradientEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9A5255142109E7008A110E /* Debug */,
+				FA9A5256142109E7008A110E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9A5257142109E7008A110E /* Build configuration list for PBXNativeTarget "ACTGradientEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9A5258142109E7008A110E /* Debug */,
+				FA9A5259142109E7008A110E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA9A5230142109E7008A110E /* Project object */;
+}
